@@ -15,7 +15,7 @@
     </modules>
 
     <properties>
-        <string.version>5.2.20.RELEASE</string.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.21</slf4j.version>
         <logback.version>1.1.7</logback.version>
@@ -44,6 +44,7 @@
             <version>${slf4j.version}</version>
         </dependency>
 
+        <!--        commons.logging中的Log只提供一个调用Log的接口，并没有任何具体的实现 -->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -61,7 +62,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${string.version}</version>
+            <version>${spring.version}</version>
         </dependency>
 
 
