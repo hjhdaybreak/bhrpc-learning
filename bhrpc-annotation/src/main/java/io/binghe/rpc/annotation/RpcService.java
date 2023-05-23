@@ -10,11 +10,11 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Component
-public @interface RpcServer {
+public @interface RpcService {
 
     Class<?> interfaceClass() default void.class;
 
-    String interfaceName() default "";
+    String interfaceClassName() default "";
 
     String version() default "1.0.0";
 
